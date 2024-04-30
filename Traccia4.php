@@ -33,14 +33,14 @@ class Rettangolo{
     }
 
     public function area(){
-        echo "Area: ".self::mul($this->base,2)."\n";
+        echo "Area: ".$this->mul($this->base,2)."\n";
     }
     public function perimeter(){
-        echo "Perimetro: ".self::sum(self::mul($this->base, 2),self::mul(2, $this->height))."\n";
+        echo "Perimetro: ".$this->sum($this->mul($this->base, 2),$this->mul(2, $this->height))."\n";
     }
     public function diagonal(){
         echo "Diagonale: ";
-        echo self::sqr(self::sum(self::mul($this->base, $this->base),self::mul($this->height, $this->height)));
+        echo $this->sqr($this->sum($this->mul($this->base, $this->base),$this->mul($this->height, $this->height)));
         echo "\n";
     }
   
